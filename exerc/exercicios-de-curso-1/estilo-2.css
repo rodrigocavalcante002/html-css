@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+#container{
+    display: grid;
+   background-color: red;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr  ;
+   grid-template-areas: "three-barra nav ";
+}
+#nav{
+    grid-area: nav;
+    font-size: 35px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#three-barra{
+    position: absolute;
+    grid-area: three-barra;
+    padding: 10px;
+    font-size: 20px;
+    color:aliceblue
+}
+
+

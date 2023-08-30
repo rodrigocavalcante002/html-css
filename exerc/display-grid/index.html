@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usando css e html</title>
+    <style>
+      *{
+        padding:0;
+        margin:0;
+      }
+      .container{
+        text-align: center;
+        justify-content: center;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 0.7fr 1.1fr 1.1fr 1.1fr;
+        grid-template-rows:0.5fr 1.2fr 1.1fr 1.2fr;
+        grid-template-areas:"nav nav nav nav"
+                            "sidebar main main main"
+                            "sidebar conteudo1 conteudo2 conteudo3"
+                            "sidebar footer footer footer";
+        grid-gap: 1%;
+          
+      }
+      #nav{
+        background-color: aqua;
+        grid-area: nav;
+        border-radius:10px;
+      }
+      #main{
+        background-color: rgb(122, 219, 57);
+        grid-area: main;
+        border-radius:10px
+      }
+      #sidebar{
+        background-color: rgb(247, 102, 227);
+        grid-area: sidebar;
+        border-radius:10px
+      }
+      #conteudo1{
+        background-color: rgb(245, 213, 72);
+        grid-area: conteudo1;
+        border-radius:10px
+      }
+      #conteudo2{
+        background-color: rgb(120, 248, 116);
+        grid-area: conteudo2;
+        border-radius:10px
+      }
+      #conteudo3{
+        background-color: rgb(20, 59, 235);
+        grid-area: conteudo3;
+        border-radius:10px
+      }
+      #footer{
+        background-color: rgb(203, 212, 252);
+        grid-area: footer;
+        border-radius:10px
+
+      }
+      #produtos{
+        font-size:20px;
+        padding: 20px;
+        text-decoration:none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: left;
+      }
+      body{
+        background-image:linear-gradient(to top, blue 20%, red 30%, rgb(230, 47, 230) 50%) ;
+      }
+
+    </style>
+</head>
+<body>
+  <div class="container"><!--div com links de testes-->
+    <div id="nav">
+        <div id="produtos">
+            <a target="_blank" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjq5pSjuK_-AhU_E9QBHXFpAN4YABAQGgJvYQ&ohost=www.google.com&cid=CAESbOD2oHs-mtwKyS8hiiC8s3XnXTkXtLJSx7rLIH1ekMGqZS7_QnRI3tIP4zN_xSLbSHF5PWuF5KYXY5BhRW4BYBctQTm_ved1uUUS0sTMVcWMbkTQH_MUWr37qopj0DkVoz8_wfmzRqEzm4ys_w&sig=AOD64_0-miv5Ksarqdf9n3qQiJE57RbSrw&ctype=5&q=&ved=2ahUKEwi-n4mjuK_-AhX5hJUCHXb8A8IQ9aACKAB6BAgGEA4&adurl=">
+            compras</a>
+        </div>
+    </div><!--div de áreas sem nada inserido-->
+    <div id="main">primcipal</div>
+    <div id="sidebar">barra lateral</div>
+    <div id="conteudo1">conteudo1</div>
+    <div id="conteudo2">conteudo2</div>
+    <div id="conteudo3">conteudo3</div>
+    <div id="footer">footer</div>
+  </div>
+</body>
+</html>

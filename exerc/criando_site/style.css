@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2? family= Foldit:wght@600 & family= Instrument+Serif:ital@1 & display=swap');
+@font-face {
+    font-family: hamburg;
+    src: url(fonts/Hamburg.ttf);
+}
+
+*{  height:auto;
+    padding: 0%;
+    text-decoration: none;
+}
+body{
+    background-attachment: fixed;
+    background-image:linear-gradient( to top, #C7FFED , #D8FFDB);
+}
+main{
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #7a917c88;
+}
+p{
+    text-align: justify;
+}
+h1{
+    font-size: 3em;
+    font-weight:lighter;
+    font-family: hamburg;
+    text-align: center;
+    color:#023535;
+    text-decoration: underline;
+    text-shadow: 5px 5px 15px #7a917c88;
+}
+h2{
+    color:#023535;
+    font-family: 'Foldit', cursive;
+    font-family: 'Instrument Serif', serif;
+}
+main:hover{
+    color:rgb(255, 0, 0)
+}
+.seta-link{
+    padding: 1em;
+    font-size: 2em;
+    color:rgb(39, 23, 1);
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+.destaque{
+    color:aquamarine;
+}
+.selo{
+    background-color: #023535;
+    border-radius: 10px;
+}
+#caminho{
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 700;
+text-align: justify;
+width: 3em;
+border-radius:10px;
+padding-left: 10px;
+}
+#caminho > p{
+    display: none;
+}
+
+#caminho:hover>p{
+    display: block;    
+}
+

@@ -1,0 +1,128 @@
+@charset "UTF-8";
+*{
+    margin:0;
+    padding: 0;
+    border:0;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    height:100%;
+
+    display: list-item;
+}
+.barra-principal{
+    display:inline-block;
+    height: 97px;
+    width: 100%;
+    background-color:#000000e3;
+    margin-bottom: 0.5em;
+    margin: 0%;
+    background-image:url('imagem/imagem-de-fundo');
+    background-image: url(imagem/imagem-de-fundo.jpeg);
+    background-attachment:none;
+    box-shadow:-10px -10px 20px 10px rgba(3, 0, 0, 0.733) ;   
+}
+#filha-barra-p{
+    display: flex;
+    background-color: rgba(15, 15, 15, 0.952);
+    height: 7em;
+    width: 24.8em auto;
+    border-right:-200px;
+    margin-left:40%;
+    margin-top:-70px;
+    border-top-left-radius:100%;
+    box-shadow:-10px -10px 20px 10px rgba(3, 0, 0, 0.733) ;
+}
+#titulo-principal{
+    display: inline-block;
+    padding-left: 0.6em;
+    padding-top: 0.6em;
+    width:7.5em;
+    font-family: arial Arial, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#F27405
+}
+#animation{
+    display:inline-block;
+    height: 10em;
+    width: 100%;
+    background-color: #014040;
+   
+}
+#animation:hover{
+    animation-name: animation;
+    animation-duration:6s;
+}
+    @keyframes animation{
+        0%{ width:100%;}
+        100%{width:0%;}
+        
+}
+.conteudo{
+    display:inline-block;
+    align-items: auto;
+    text-align: center;
+    height:100vh;
+    width:100%;
+    background-color: rgba(0, 255, 242, 0.418);
+    padding-top: 5em;
+    align-items: center;
+   
+}
+img{
+    display:inline-block;
+    width: 8em;
+    height: 8em;
+    margin-top: 2em;
+    align-items: auto;
+    text-align: auto;
+    border-radius:50%;
+    outline: 5px dashed #F27405;
+}
+/* outline-width: 5px;
+    outline-style: dashed;
+    outline-color: #F27405;*/
+#perfil{
+    display: inline-block;
+    font-family: cursive;
+}
+p{
+    margin-top: -76px;
+    font-size: 28px;
+    align-items: auto;
+    text-align: auto;
+}
+#perfil > p{
+    display: none;
+}
+#perfil:hover > p{
+    display:block;
+}
+img:hover{
+    opacity: 50%;
+}
+#lista ul{
+    display:inline-flex;
+    border: 1px solid;
+    margin-top: 5em ;
+    margin-left:1em;
+    margin-right: auto;
+    height: 3em;
+    text-align: center;
+    align-items: center;
+    gap:4.5em;
+    font-weight: 800;
+    background-color:#014040 ;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    border-radius: 10px;
+    box-shadow: 0px 20px 30px 9px #007e7ee8 ;
+    animation-name: lista;
+}
+#lista ul:hover{
+    width: 4em;
+    height: 4em;
+}
+a{
+    color:#F27405
+}
